@@ -1,0 +1,127 @@
+.mainDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  flex-direction: column;
+}
+.back {
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  bottom: 0;
+  left: 15px;
+}
+.divStars {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.spanStar {
+  padding: 0 10px;
+  color: white;
+  font-size: 18px;
+}
+.btns {
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(220, 131, 15, 0);
+  border: none;
+}
+
+.activeStar {
+  fill: goldenrod;
+  color: black;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(250, 235, 215, 0);
+}
+
+.inactiveStar {
+  fill: rgba(255, 255, 255, 0.242);
+  color: white;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(250, 235, 215, 0);
+}
+.mainComment {
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  /* max-width: 600px; */
+  width: 100%;
+  position: relative;
+  padding: 20px 0;
+  /* background-color: chartreuse; */
+}
+.mainForm {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+  flex-direction: column;
+  /* background-color: darkgreen; */
+}
+.submiBtn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 85%;
+}
+.interCommentName {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* max-width: 500px; */
+  width: 100%;
+}
+.interCommentContent {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* max-width: 500px; */
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 10px 100px;
+  border-radius: 5px;
+  border: none;
+}
+
+.floatingLable {
+  font-size: 13px;
+  color: #999999;
+  position: absolute;
+  pointer-events: none;
+  top: 2px;
+  left: 10px;
+  transition: all 0.1s ease;
+}
+.input:focus ~ .floatingLable {
+  top: -23px;
+  left: 0px;
+  font-size: 14px;
+  color: white;
+}

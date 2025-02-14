@@ -1,0 +1,30 @@
+.mDiv {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 500px;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: navy;
+  color: white;
+  transition: 0.2s;
+}
+.span{
+  color: white;
+  text-align: center;
+}
+.input{
+  border: none;
+  padding: 5px ;
+  border-radius: 5px;
+
+}
